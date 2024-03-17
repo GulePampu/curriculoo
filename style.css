@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    cursor: default;
+} body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161b22;
+    margin: 30px;
+} :root{
+    --text-color: #d4d4d4;
+    --largura: 800px;
+} ul, h1, h2, h3, h4, p{
+    color: var(--text-color);
+} .eu{
+    background-color: #0c8f63;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: var(--largura);
+} .apresentacao{
+    display: flex;
+    justify-content: space-between;
+} .informacoes{
+    margin: 10px;
+} .vaga, .nascimento, .e-mail, .telefone, .endereco{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+} :is(.vaga, .nascimento, .e-mail, .telefone, .endereco) p{
+    margin-left: 10px;
+} .imagem img{
+    display: flex;
+    border-radius: 0 10px;
+} .contatos{
+    margin-left: 30px;
+    margin-bottom: 10px;
+} .contatos a{
+    margin-right: 15px;
+} .contatos img:hover{
+    transform: scale(1.1);
+} .sobreMim{
+    width: 750px;
+    text-align: center;
+} .sobreMim :where(h2, p){
+    margin-top: 20px;
+} .progresso{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: var(--largura);
+    display: flex;
+    flex-flow: row wrap;
+    width: 750px;
+} .progresso div{
+    width: 250px;
+} .progresso ul{
+    margin: 20px;
+} .progresso li{
+    margin-top: 8px;
+} .projetinhos{
+    margin: 20px;
+    text-align: center;
+} .projetos{
+    display: flex;
+    flex-flow: row wrap;
+} .projetos li{
+    margin: 10px 30px;
+} .projetos li:hover{
+    scale: 1.1;
+} .projetos a{
+    font-size: 30px;
+    color: var(--text-color);
+} .downloadCurriculo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .material-symbols-outlined{
+    color: #fff;
+    cursor: pointer;
+} .rodape{
+    width: 100%;
+    padding: 24px 0;
+    background-color: #0c8f63;
+    color: var(--text-color);
+    text-align: center;
+}
